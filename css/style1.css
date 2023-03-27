@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+}
+
+
+:root {
+  --main: orange;
+  --orange1: rgb(190, 80, 7);
+  --orange2: rgb(216, 142, 5);
+  --orange3: rgb(238, 154, 27);
+  --orange4: rgb(235, 154, 4);
+  --white: rgb(255, 255, 255);
+  --bg: rgb(21, 22, 31);
+  --bg1: rgba(35, 37, 49, 0.966);
+  --bg-body: rgb(233, 233, 233);
+
+}
+
+body {
+  background: var(--bg-body);
+}
+
+
+.primary-text {
+  color: var(--orange1);
+}
+
+
+
+
+body {
+  overflow-x: hidden;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+#sidebar-wrapper .side-user {
+  margin: 5rem 0rem;
+  text-align: center;
+}
+
+#sidebar-wrapper .side-img img {
+  height: 120px;
+  width: 120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px solid rgb(28, 28, 41);
+  border-radius: 50%;
+  margin: auto;
+}
+
+
+#sidebar-wrapper .user {
+  text-align: center;
+  color: var(--white);
+  margin-top: 1.5rem;
+}
+
+#sidebar-wrapper .side-user {
+  margin-bottom: 30px;
+}
+
+
+#sidebar-wrapper .user small {
+  display: inline-block;
+  color: var(--orange2);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+#sidebar-wrapper li {
+  margin-bottom: 0.5rem;
+}
+
+#sidebar-wrapper ul {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+
+#sidebar-wrapper .textbar li {
+  position: relative;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+#sidebar-wrapper .textbar li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+  align-items: center;
+  display: flex;
+  font-weight: 500;
+  padding: .4rem 0rem;
+}
+
+#sidebar-wrapper a span:first-child {
+  font-size: 1.5rem;
+  padding: 0rem 0.5rem;
+}
+
+
+#sidebar-wrapper .textbar li:hover {
+  color: var(--white);
+  background: var(--orange2);
+  transition: .2s ease;
+}
+
+#sidebar-wrapper .textbar li a:hover {
+  transition: .2s ease;
+  color: var(--white);
+}
+
+
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -16rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 16rem;
+}
+
+/* #sidebar-wrapper{
+  position: fixed;
+  z-index:1000;
+} */
+
+
+.icon1 span {
+  color: red;
+  background: white;
+}
+.icon2 span {
+  color: rgb(17, 0, 255);
+  background: white;
+}
+.icon3 span {
+  color: rgb(255, 0, 200);
+  background: white;
+}
+.icon4 span {
+  color: rgb(4, 116, 10);
+  background: white;
+}
+
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+.sidebar ul li {
+  padding-left: 0.5rem;
+}
+
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+
+
+.card {
+  display: flex;
+  background: var(--bg);
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 10px;
+  color: var(--main);
+  height: 150px;
+}
+
+.card-icon {
+  position:relative;
+  top: 30px;
+}
+
+.card-icon span{
+  height: 45px;
+  width: 45px;
+  font-size: 2rem;
+  background: var(--orange2);
+  color: var(--white);
+  border-radius: 50%;
+  display: grid; 
+  place-items: center;  /* ให้ไอเทมในพื้นที่สามารถอยู่ตรงซ้าย กลาง ขวา*/
+}
+
+.card-info{
+  display:inline-block;
+  position:absolute;
+  right:20px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+
+.card-info small{
+  color: white;
+  display: inline-block;  /*แสดงบรรทัดเดียวต่อกันไม่ขึ้นบรรทัดใหม่ */
+  padding-top: 2rem;
+}
+
+.card-info h2{
+  font-size: 2rem;
+  padding-top: .8rem;
+}
+
+.list-group-item.active {
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-weight: bold;
+    border: none;
+  }
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -16rem;
+  }
+}
