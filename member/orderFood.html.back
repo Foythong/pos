@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css"> 
+    <link rel="stylesheet" href="css/test.css">
+    <title>POS</title>
+
+
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="container mt-1">
+            <div class="row">
+                <div class="col-md-12">
+                    <div
+                        class="mt-0 p-3 bg-dark text-white rounded col-md-12 text-white d-flex justify-content-between ">
+                        <div class="ms-md-2">
+                            หน้าสั่งรายการ
+                        </div>
+                        <div class="me-md-2">
+                            <small> 14/7/2022 11.04 PM </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body col-md-12 mt-4" style="background-color: rgb(255, 255, 255);">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="col-md-12 pt-1 ms-0">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="food" data-bs-toggle="pill"
+                                        data-bs-target="#pills-food" type="button" role="tab" aria-controls="pills-food"
+                                        aria-selected="true">อาหาร</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link  " id="drink" data-bs-toggle="pill"
+                                        data-bs-target="#pills-drink" type="button" role="tab"
+                                        aria-controls="pills-drink" aria-selected="false">เครื่องดื่ม</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content ms-0" id="tabContent">
+                                <div class="tab-pane fade show active" id="pills-food" role="tabpanel"
+                                    aria-labelledby="pills-food-tab">
+                                    <div class="row">
+                                        <div class="row row-cols-1 row-cols-md-4 g-3 mt-0 ps-3">
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="assets/images/food.jpg" class="img-fluid rounded-start"
+                                                        alt="">
+                                                    <div class="card-body p-2">
+                                                        <h6 class="card-title">กระเพราไข่ดาว</h6>
+                                                        <p class="card-text">40 บาท</p>
+                                                        <button type="submit" class="btn btn-success">สั่งซื้อ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="assets/images/food.jpg" class="img-fluid rounded-start"
+                                                        alt="">
+                                                    <div class="card-body p-2">
+                                                        <h6 class="card-title">กระเพราไข่ดาว</h6>
+                                                        <p class="card-text">40 บาท</p>
+                                                        <button type="submit" class="btn btn-success">สั่งซื้อ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="assets/images/food.jpg" class="img-fluid rounded-start"
+                                                        alt="">
+                                                    <div class="card-body p-2">
+                                                        <h6 class="card-title">กระเพราไข่ดาว</h6>
+                                                        <p class="card-text">40 บาท</p>
+                                                        <button type="submit" class="btn btn-success">สั่งซื้อ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="assets/images/food.jpg" class="img-fluid rounded-start"
+                                                        alt="">
+                                                    <div class="card-body p-2">
+                                                        <h6 class="card-title">กระเพราไข่ดาว</h6>
+                                                        <p class="card-text">40 บาท</p>
+                                                        <button type="submit" class="btn btn-success">สั่งซื้อ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-drink" role="tabpanel"aria-labelledby="pills-drink-tab">
+                                    <div class="row">
+                                        <div class="row row-cols-1 row-cols-md-4 g-3 mt-0 ps-3">
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="assets/images/coffee.jpg" class="img-fluid rounded-start"
+                                                        alt="">
+                                                    <div class="card-body p-2">
+                                                        <h6 class="card-title">กาแฟ</h6>
+                                                        <p class="card-text">30 บาท</p>
+                                                        <button type="submit" class="btn btn-success">สั่งซื้อ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="assets/images/coffee.jpg" class="img-fluid rounded-start"
+                                                        alt="">
+                                                    <div class="card-body p-2">
+                                                        <h6 class="card-title">กาแฟ</h6>
+                                                        <p class="card-text">30 บาท</p>
+                                                        <button type="submit" class="btn btn-success">สั่งซื้อ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="assets/images/coffee.jpg" class="img-fluid rounded-start"
+                                                        alt="">
+                                                    <div class="card-body  p-2">
+                                                        <h6 class="card-title">กาแฟ</h6>
+                                                        <p class="card-text">30 บาท</p>
+                                                        <button type="submit" class="btn btn-success">สั่งซื้อ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="card">
+                                                    <img src="assets/images/coffee.jpg" class="img-fluid rounded-start"
+                                                        alt="">
+                                                    <div class="card-body p-2">
+                                                        <h6 class="card-title">กาแฟ</h6>
+                                                        <p class="card-text">30 บาท</p>
+                                                        <button type="submit" class="btn btn-success">สั่งซื้อ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                        <div class="col-md-4" >
+                            <div class="row">
+                                <div class="row px-1">
+                                <h5 class="mb-3">รายการสั่งอาหาร</h5>
+                                <table class="table text-white text-center align-middle me-0"
+                                    style="background-color:rgb(233, 115, 61);">
+                                    <thead class="text-black" style="background-color:rgb(240, 177, 40); ">
+                                        <tr>
+                                            <th class="col-sm-1">#</th>
+                                            <th class="col-sm-2">รูป</th>
+                                            <th class="col-sm-4">รายการ</th>
+                                            <th class="col-sm-1">จำนวน</th>
+                                            <th class="col-sm-1">ราคา</th>
+                                            <th class="col-sm-2"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <img src="assets/images/food.jpg" alt="" style="width: 45px; height: 45px"
+                                                    class="rounded-circle" alt="">
+                                            </td>
+                                            <td>กระเพราไข่ดาว</td>
+                                            <td><input type="number" value="1" class="col-sm-12 text-center" min="1"></td>
+                                            <td>40</td>
+                                            <td><button type="submit" class="btn btn-danger">ลบ</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <img src="assets/images/coffee.jpg" alt="" style="width: 45px; height: 45px"
+                                                    class="rounded-circle" alt="">
+                                            </td>
+                                            <td>กาแฟ</td>
+                                            <td><input type="number" value="1" class="col-sm-12 text-center" min="1"></td>
+                                            <td>30</td>
+                                            <td><button type="submit" class="btn btn-danger">ลบ</button></td>
+                                        </tr>
+                                        <tr class="text-black" style="background-color:rgb(240, 177, 40);">
+                                            <td colspan="3">รวมสุทธิ</td>
+                                            <td colspan="3">70</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                                <div class="row">
+                                    <div class="row col-md-12 ms-md-5">
+                                        <!-- <div class="col-md-12"> -->
+                                            <div class="d-flex">
+                                                <div class="mx-2">
+                                                    <button type="submit" class="btn btn-primary">สั่งซื้อ</button>
+                                                </div>
+                                                <div class="mx-2">
+                                                    <button type="submit" class="btn btn-danger">ยกเลิกออเดอร์</button>
+                                                </div>
+                                                
+                                            </div>
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                             
+                              
+                            </div>  
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <ul class="pagination mt-4">
+                                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+            </div>
+        </div>
+    </div>
+
+    </body>
+</html>
